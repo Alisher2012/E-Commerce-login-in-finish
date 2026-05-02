@@ -1,0 +1,138 @@
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 48px;
+}
+
+.nav-links  a:hover{
+  color: red;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.search-bar {
+  border-radius: 4px;
+  padding: 7px 12px;
+  display: flex;
+  border: 1.8px solid black;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  width: 150px;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-container {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #db4444;
+  color: white;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-menu-container {
+  position: relative;
+}
+
+.user-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.user-icon-btn.active, .user-icon-btn:hover {
+  background-color: #db4444;
+  color: white;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 224px;
+  background: linear-gradient(168.68deg, rgba(80, 80, 80, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+  backdrop-filter: blur(150px);
+  border-radius: 4px;
+  padding: 18px 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item span {
+  font-family: inherit;
+}
+
+.logout-btn {
+  margin-top: 5px;
+}

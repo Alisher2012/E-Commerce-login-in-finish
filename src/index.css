@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: #db4444;
+  --secondary: #00ff66;
+  --bg-secondary: #f5f5f5;
+  --text-primary: #000000;
+  --text-secondary: #7d8184;
+  --white: #ffffff;
+  --black: #000000;
+  --transition: all 0.3s ease;
+  --container-width: 1170px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+/* Typography Helpers */
+.text-overline {
+  color: var(--primary);
+  font-weight: 600;
+  border-left: 10px solid var(--primary);
+  padding-left: 10px;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 16px;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  letter-spacing: 0.04em;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 16px 48px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background-color: #e07575;
+}

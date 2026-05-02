@@ -1,0 +1,38 @@
+.top-header {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.top-header-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.promo-message {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.chevron-down::after {
+  content: '⌄';
+  font-size: 18px;
+}
+
+.shop-now-link {
+  font-weight: 600;
+  text-decoration: underline;
+  margin-left: 10px;
+  color: inherit;
+}

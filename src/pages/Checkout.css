@@ -1,0 +1,183 @@
+.checkout-page {
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+
+.checkout-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 48px;
+  color: black;
+}
+
+.checkout-content {
+  display: grid;
+  grid-template-columns: 1fr 527px;
+  gap: 100px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.form-group label .required {
+  color: var(--primary, #db4444);
+}
+
+.form-group input {
+  background: #F5F5F5;
+  border: none;
+  border-radius: 4px;
+  padding: 13px 16px;
+  font-size: 16px;
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.checkbox-group input {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--primary, #db4444);
+}
+
+.checkbox-group label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.order-summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-left img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.item-left span {
+  font-size: 16px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  font-size: 16px;
+}
+
+.order-summary-card hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+
+.grand-total {
+  font-weight: 500;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.payment-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.option-label input {
+  width: 24px;
+  height: 24px;
+  accent-color: black;
+}
+
+.bank-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.bank-icons img {
+  height: 20px;
+  object-fit: contain;
+}
+
+.checkout-coupon {
+  display: flex;
+  gap: 16px;
+}
+
+.checkout-coupon input {
+  flex-grow: 1;
+  padding: 16px 24px;
+  border: 1px solid black;
+  border-radius: 4px;
+  outline: none;
+}
+
+.place-order-btn {
+  padding: 16px 48px;
+  align-self: flex-start;
+}
+
+@media (max-width: 1200px) {
+  .checkout-content {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+  
+  .order-summary-card {
+    max-width: 527px;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-coupon {
+    flex-direction: column;
+  }
+  
+  .place-order-btn {
+    width: 100%;
+  }
+}

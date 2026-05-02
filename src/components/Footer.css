@@ -1,0 +1,84 @@
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 80px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 60px;
+}
+
+.footer-col h3 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.footer-col ul li {
+  margin-bottom: 16px;
+  color: var(--bg-secondary);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-input-group {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-input-group input {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  width: 80%;
+}
+
+.footer-app-label {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.footer-app-links {
+  display: flex;
+  gap: 10px;
+}
+
+.qr-code {
+  background: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.store-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.store-btn {
+  background: black;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.store-btn span {
+  font-size: 10px;
+}
